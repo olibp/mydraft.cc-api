@@ -1,0 +1,20 @@
+{
+  "name": "mydraft.cc-api",
+  "version": "1.0.0",
+  "description": "Mydraft.cc-api in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "docker:build": "docker build --file Dockerfile --rm --tag mydraft-api .",
+    "docker:export": "docker save mydraft-api:latest -o mydraft-api.tar",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Pedersen (olibp)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "node-persist": "^3.1.0",
+    "nodemon": "^2.0.4",
+    "restana": "^4.7.3"
+  }
+}
